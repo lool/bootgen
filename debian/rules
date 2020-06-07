@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+# workaround missing make install target
+override_dh_auto_install:
+	install -d debian/bootgen/usr/bin
+	install bootgen debian/bootgen/usr/bin
+

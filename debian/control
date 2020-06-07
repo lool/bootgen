@@ -1,0 +1,16 @@
+Source: bootgen
+Section: devel
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper-compat (= 12), libssl-dev
+Standards-Version: 4.5.0
+
+Package: bootgen
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Xilinx Bootgen
+ Bootgen is a Xilinx tool that lets you stitch binary files together
+ and generate device boot images. Bootgen defines multiple properties,
+ attributes and parameters that are input while creating bootimages for
+ use in a Xilinx device.
+
